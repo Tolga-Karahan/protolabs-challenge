@@ -12,6 +12,31 @@ This document describes the current ETL pipeline, recommended improvements, and 
 - **Load**: `etl/load.py` → writes DataFrame into SQLite database (`cases` table).
 - **Orchestrator**: `main.py` → calls extract → transform → load sequentially.
 
+
+## How to run it
+### 1. Set up a Python environment
+Using **venv**:
+```bash
+python3 -m venv cases-env
+source cases-env/bin/activate   # Linux/macOS
+.\cases-env\Scripts\activate    # Windows PowerShell
+```
+
+### 2. Install Dependencies
+```bash
+pip install -r requirements.txt
+```
+
+### 3. Run the pipeline
+```bash
+python main.py
+```
+
+### 4. Check data in query.ipynb notebook
+Choose the kernel of the notebook as the Python virtual environment you created! You can execute cells in `query.ipynb` notebook to examine data!
+
+
+## Schemas
 ### Initial Schema (18 columns)
 - Raw parquet data with string, float, and object types.
 
@@ -23,7 +48,8 @@ This document describes the current ETL pipeline, recommended improvements, and 
 ### Diagrams
 - **ETL Architecture**:
 ![](etl_architecture.png)
-- **ERD**:
+
+- **ERD**:  
 ![](erd_cases.png)
 
 ---
@@ -101,4 +127,17 @@ CMD ["python", "main.py"]
 - Run log table with run_id, counts, checksums.
 - Optional OpenLineage/Marquez integration.
 
+
+## Answers to Questions about the Assessment
+### 1. How long did it take you to complete the task?
+It took a few hours.
+
+### 2. What part did you find the most challenging? Was something unclear?
+Processing holes data was a bit challenging. Everything was clear to me!
+
+### 3. Do you think the assignment has an appropriate level of difficulty?
+I think it is good for quickly assessing fundamental knowledge.
+
+### 4. Does the assignment evaluate what you expected?
+Yes, I found it as a good assignment for evaluation.
 ---
