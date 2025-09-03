@@ -38,7 +38,6 @@ def has_unreachable_hole_error(holes:list)->bool:
 
 
 def transform_data(df:pd.DataFrame)->pd.DataFrame:
-    # df["holes"] = df["holes"].apply(lambda x: np.nan if x == "<NA>" else x)
     df["has_unreachable_hole_warning"] = df["holes"].apply(lambda x: has_unreachable_hole_warning(x))
     df["has_unreachable_hole_error"] = df["holes"].apply(lambda x: has_unreachable_hole_error(x))
     return df

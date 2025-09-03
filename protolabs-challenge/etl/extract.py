@@ -16,10 +16,3 @@ def extract_data(file_path: str) -> pd.DataFrame:
     except Exception as e:
         print(f"Error reading the CSV file: {e}")
         return pd.DataFrame()
-    
-if __name__ == "__main__":
-    # Example usage
-    file_path = "data/2023 DE_case_dataset.gz.parquet"
-    df = extract_data(file_path)
-    print(df.head())
-    print(type(df["holes"][0]))
