@@ -30,7 +30,7 @@ pip install -r requirements.txt
 ### 3. Put the Data into data Folder
 Please download and put data into `data` folder:
 ```bash
-mv 2023 "DE_case_dataset.gz.parquet" protolabs-challenge/data
+mv "2023 DE_case_dataset.gz.parquet" protolabs-challenge/data
 ```
 
 ### 4. Run the pipeline
