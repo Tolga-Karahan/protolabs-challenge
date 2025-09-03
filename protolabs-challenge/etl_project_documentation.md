@@ -39,7 +39,7 @@ python main.py
 ```
 
 ### 4. Check the data in query.ipynb notebook
-Choose the kernel of the notebook as the Python virtual environment you created! You can execute cells in `query.ipynb` notebook to examine data!
+Open `query.ipynb`to examine and query the data. Choose the kernel of the notebook as the Python virtual environment you created!
 
 
 ## Schemas
