@@ -38,7 +38,7 @@ mv "2023 DE_case_dataset.gz.parquet" protolabs-challenge/data
 python main.py
 ```
 
-### 4. Check data in query.ipynb notebook
+### 4. Check the data in query.ipynb notebook
 Choose the kernel of the notebook as the Python virtual environment you created! You can execute cells in `query.ipynb` notebook to examine data!
 
 
